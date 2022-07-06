@@ -1,8 +1,9 @@
 
 import withMain from "./withMain"
+import { SectionHeader } from "../../Components"
 
 const Main = ({context,dispatch}) => {
-    return <h1> {context.test} </h1>
+    return <SectionHeader> {context.test} </SectionHeader>
 }
 
 export default withMain(Main)
