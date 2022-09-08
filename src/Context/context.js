@@ -1,20 +1,21 @@
 import {createContext, useContext, useReducer } from 'react'
 
+
 const Ctx = createContext({})
 
 export const CtxProvider = ({children}) => { 
 
     const initialState = {
-        test: 'Starter Up!'
+        contextTest: "#E9EEF2"
     }
 
     const reducer = (state,action) => {
         switch(action.type) {
         
-            case 'setTest': {
+            case 'testContext': {
                 return {
                     ...state,
-                    test: action.value
+                    contextTest: action.value
                 }
             }
 

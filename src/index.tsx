@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Main} from './Containers/index'
+import {Main, RouterTest} from './Containers/index'
 import { CtxProvider } from './Context/context';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -16,6 +16,7 @@ root.render(
       <CtxProvider>
           <Routes>
               <Route path='/' element={<Main/>} /> 
+              <Route path="/routing" element={<RouterTest/>} />
           </Routes>
         </CtxProvider>
       </BrowserRouter>
